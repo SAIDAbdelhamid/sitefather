@@ -1,0 +1,354 @@
+// Style général
+
+body{
+	font-family: 'Opensans' sans-serif;
+	background-color: #f2f2f2;}
+section {
+  padding-top: 6.25rem;
+  padding-bottom: 6.25rem;
+
+  hr {
+    background: #ff4800;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }}
+hr{
+	width: 8rem;
+	height: .3125rem;}
+ul{
+	list-style: none;
+	margin:0;
+	padding:0;}
+a:hover,
+a:focus,
+a:active{
+	text-decoration:none;
+	color:inherit;}
+
+
+// Header
+
+.navbar-responsive{
+	background-color: #033163;
+
+	ul{
+		text-align: center;
+
+		li{
+			height: 4rem;
+			@include font( 1.125rem, 300, 4rem, #fff);
+			a{
+				color:inherit;
+			}
+		}
+	}}
+header{
+	width: 100%;
+	height:40.3125rem;
+	padding-top:1.125rem;
+	background-image: url('../img/realisation/header.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size:cover;
+
+
+	.logonavbar {
+
+    .navbar {
+      ul {
+        float: right;
+
+        li {
+          float: left;
+          @include font(1rem, 300, 2.5rem, #fff);
+
+          + li {
+            margin-left: 2rem;
+          }
+
+          a {
+            color: inherit;
+
+            &.hvr-underline-from-left::before {
+
+              background: #fff;
+            }
+          }
+        }
+      }
+
+      img.menu{
+      	width:2rem;
+      }
+	 }
+	}
+
+	h1.catchphrase{
+	 @include font(3.125rem, 300, 3.125rem, #fff);
+	 text-transform:oppercase;
+	 text-align:center;
+	 margin-top:9rem;
+
+	 span{
+	 font-weight:600;
+	 }
+	}
+
+	a.down-arrow{
+	display :block;
+	width: 4.125rem;
+	margin: auto;
+	margin-top: 6.875rem;
+
+		img {
+			width: 100%;
+			animation: arrow 1s ease-in-out infinite alternate;
+		}
+
+	}
+
+	@keyframes arrow{
+	  from {
+	    opacity: 1;
+	    margin-top: 0;
+	  }
+
+	 to{
+		opacity: .2;
+		margin-top:2rem;
+	 }
+	}}
+
+
+
+// Présentation SER
+
+.Presentation{
+	h2{
+	text-align: center;
+	@include font (2.1875rem, 800, 2.1875rem, #282828);
+	}
+
+	p{
+	margin-top:6rem;
+	margin-bottom:2rem;
+	@include font (1.25rem, 400, 1.5rem, #282828);	
+		}
+ 	}
+
+
+// Pourquoi SER
+
+.pk{
+	width: 100%;
+	height:40.3125rem;
+	padding-top:1.125rem;
+	h2{
+		@include font(2.5rem, 700, 2.5rem, #282828);
+		text-align: center;	
+	    }
+	p{
+		@include font (1.25rem, 400, 1.5rem, #282828);	
+		margin-top:3rem;
+		margin-bottom:2rem;
+	    }
+	li{
+		@include font (1.25rem, 400, 1.5rem, #282828);
+		margin-top:.8rem;	
+		}    
+	img.picture{
+		width: 35rem;
+		float: right;
+		margin-top:3rem;
+		}}
+
+
+// Compétance SER
+
+.competance{
+	width: 100%;
+	height:40.3125rem;
+	padding-top:1.125rem;
+	h2{
+		@include font(2.5rem, 700, 2.5rem, #282828);
+		text-align: center;	
+	    }
+	p{
+		@include font (1.25rem, 400, 1.5rem, #282828);	
+		margin-top:5rem;
+		margin-left:3rem;
+		margin-bottom:2rem;
+	    }
+	li{
+		@include font (1.25rem, 400, 1.5rem, #282828);
+		margin-top:.8rem;
+		margin-left:3rem;	
+		}    
+	img.picture{
+		width: 35rem;
+		float: left;
+		margin-top:3rem;
+		}}
+
+
+// Expérience
+
+.xp{
+	width: 100%;
+	height:40.3125rem;
+	padding-top:1.125rem;
+	h2{
+		@include font(2.5rem, 700, 2.5rem, #282828);
+		text-align: center;	
+	    }
+	p{
+		@include font (1.25rem, 400, 1.5rem, #282828);	
+		margin-top:3rem;
+		margin-bottom:2rem;
+	    }
+	li{
+		@include font (1.25rem, 400, 1.5rem, #282828);
+		margin-top:.8rem;	
+		}    
+	img.picture{
+		padding-top:.4rem;
+		width: 23rem;
+		float: right;
+		margin-top:3rem;
+		}}
+
+
+// Présentation résponsables SER
+
+.DG{
+	h2{
+	@include font (2.1875rem, 800, 2.1875rem, #282828);
+	text-align: center;
+	}
+
+
+	h3{
+	margin-top:3rem;
+	margin-bottom: 2rem;
+	@include font (1.5625rem, 600, 1.5625rem, #282828);
+	
+	}
+
+	p{
+	margin-bottom: 2rem;
+	@include font (1.25rem, 400, 1.5rem, #282828);
+	
+	}
+
+	ul{
+	list-style: url('../img/site/puce.svg');
+	@include font (1.25rem, 700, 1.875rem, #282828);
+	margin-bottom: 2rem;
+	list-style-position: inside;
+
+	a{
+		color: #ff4800;
+		text-decoration: underline;
+
+	}
+
+	}
+
+	img.picture{
+	margin-top:3rem;
+	width: 25rem;
+	float: right;
+	}
+
+	.social-networks{
+	text-align: center;
+
+	a{
+	 + a{
+		margin-left: .3125rem;
+	}
+		img{
+			width: 2.1875rem;
+		}
+	}
+
+	}}
+.DGG{
+	h2{
+	@include font (2.1875rem, 800, 2.1875rem, #282828);
+	text-align: center;
+	}
+
+
+	h3{
+	margin-bottom: 2rem;
+	@include font (1.5625rem, 600, 1.5625rem, #282828);
+	
+	}
+
+	p{
+	margin-bottom: 2rem;
+	@include font (1.25rem, 400, 1.5rem, #282828);
+	
+	}
+
+	ul{
+	list-style: url('../img/site/puce.svg');
+	@include font (1.25rem, 700, 1.875rem, #282828);
+	margin-bottom: 2rem;
+	list-style-position: inside;
+
+	a{
+		color: #ff4800;
+		text-decoration: underline;
+
+	}
+
+	}
+
+	img.picture{
+	width: 25rem;
+	float: left;
+	}
+
+	.social-networks{
+	text-align: center;
+
+		a{
+		 + a{
+			margin-left: .3125rem;
+			}
+			img{
+			width: 2.1875rem;
+		}
+		}
+
+	}}
+
+.contact{
+	width: 100%;
+	height:40.3125rem;
+	padding-top:1.125rem;
+	h2{
+		@include font(2.5rem, 700, 2.5rem, #282828);
+		text-align: center;	
+	    }
+	p{
+		@include font (2.5rem, 600, 2.5rem, #282828);	
+		margin-top:3rem;
+		margin-left:5rem;
+		text-align:center;	
+		+p{
+		@include font (1.5rem, 400, 2.5rem, #282828);
+		text-align:center;	
+		margin-top:3rem;
+		margin-left:5rem;
+
+
+		}
+	    }
+	li{
+		@include font (1.25rem, 400, 1.5rem, #282828);
+		margin-top:.8rem;	
+		}  
+		}
